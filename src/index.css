@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.tile {
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    
+}
+
+.line{
+    display: flex;
+    gap: 5px;
+}
+
+
+.correct{ 
+    background-color: green;
+}
+
+.misplaced {
+    background-color: yellow;
+}
+ 
+
+.wrong {
+    background-color: lightgray;
+}
