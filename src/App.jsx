@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Line from './Line'
+import texture from './assets/batthern-1920x1080.png'
 
 
 const API_URL = "https://random-word-api.vercel.app/api?words=1&length=6"
@@ -117,7 +118,8 @@ return () =>  window.removeEventListener("keydown" , handleType)
 
   return (
     <>
-
+    <img src={texture} alt="" />
+ <h1>Wordle!</h1>
 <div className='board'>
 {guesses.map((guess , i) => <Line CURRENT_ROW = {CURRENT_ROW} key={i} i = {i} solution = {solution} guess = {guess} currentGuess = {currentGuess} guesses = {guesses} guessChars = {guessChars} setGuessChars = {setGuessChars} />  )} 
 </div>
